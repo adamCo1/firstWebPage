@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<nav id="menu" >
+<a href="#about" onclick="changeActive('About Me')">About Me</a>
+<a href="#photos" onclick="changeActive('Photos')">My Photos</a>
+<a href="#playlist" onclick="changeActive('My Playlist')">My Playlist</a>
+<a href="#like" onclick="changeActive('Like')">Like</a>
+<a href="#qrcoder" onclick="changeActive('QR Code')">QR code</a>
+<a href="#Q&A" onclick="changeActive('Q&A')">Q&A</a>
+<a href="#contact" onclick="changeActive('Contact Me')">Contact Me</a>
+<a class="active" id = "currentActive" >About Me</a>
+</nav>
+		  
+<section id="about" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>About Me</h1>
+<br/>
+<br/>
+<main>My name is adam , 28 years old from hadera originally.
+
+The most interesting fields for me are AI and Algorithms , and i hope to find 
+a job in one of those fields in the near future .
+
+I excpect that after completing this course i will have a working knowledge of
+building websites in a moderate level .
+
+I never had any expirience with the web but surfing in it . so the most hard thing for
+was to get used to the tags and to the concept that the web site is disconnected
+from the code of the scripts . Also took me a few hours to get used to javascript,
+which i have never used before</main> .
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>My Photos</h2>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h3>My Playlist</h3>
+<br/>
+My favorite band is Dream Theater . so the list is ofcourse of their songs
+<br/>
+<br/>
+<embed>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yx9-5AxFa4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</embed>
+</section>
+
+<section id="like" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h4>Give me a like</h4>
+<br/>
+<br/>
+<br/>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.4siteconsulting.co.uk%2Fcase-study-2.html&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
+</section>
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h5>Scan my code</h5>
+<br/>
+<br/>
+<br/>
+<aside>Follow this QR code to reach the website
+
+
+
+</aside>
+</section>
+
+<section id="Q&A" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<h6>Ans</h6>
+<br/>
+Difference between web1.0 , web2.0 and web3.0 :
+<br/>
+<br/>
+
+<div class="container">
+
+<table id="diffTable">
+  <th>Web 1.0</th>
+  <th>Web 2.0</th>
+  <th>Web 3.0</th>
+
+  <tr>
+    <td>
+      Web 1.0 described the 
+      "readable" phrase .
+      in this version , 
+      the interaction between the user
+      and the web site was 
+      very limited , as to only
+      enabling the user to 
+      recieve information , without
+      the abillity to "give" 
+      information , such as posts,
+      reviews,comments, or anything really.
+    </td>
+    <td>
+      Web 2.0 describes the
+       "writeable" phrase.
+      In this version , the 
+      interaction between users
+      and the web was expanded 
+      , so the user can now
+      also "give" information 
+      , not like in Web 1.0 .
+      It encourages information 
+      sharing and user's participation . 
+    </td>
+    <td>
+      Web 3.0 is the "excecuteable" 
+      phrase . In this version , the 
+      dynamic applications were 
+      introduced to the web , 
+      which enables interactive
+      services such as HTML5 
+      tutorials , and other many 
+      useful applications which 
+      makes the web even more 
+      interaction encouraging than 
+      ever before.
+    </td>
+  </tr>
+
+</table>
+</div>
+
+
+
+<br/>
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h7>Contact Me</h7>
+<br/>
+<br/>
+<br/>
+
+<div class="emailFormContainer">
+<form action="mailto:adamcohe@post.bgu.ac.il" method="POST" enctype="text/plain">
+
+<div>Tell me what you think by mail :</div>
+name:
+<br/>
+<input type="text" name="name" >
+<br/>
+E-mail Content:
+<br/>
+<input type="text" name="mail" >
+</br>
+</br>
+</br>
+<input type="submit" value="Send" >
+<input type="reset" value="Reset">
+</form>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<script>
+  function changeActive(tabName){
+      document.getElementById("currentActive").innerHTML = tabName
+  }
+</script>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
