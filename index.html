@@ -101,7 +101,7 @@
 </div>
 
 
-<!-- The Modal/Lightbox -->
+<!-- The Lightbox -->
 <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
@@ -191,11 +191,11 @@
 <br/>
 <h1>My Playlist</h1>
 <br/>
-<p>My favorite is the cartoon made on me . watching this every night</p>
+<p><strong>My favorite is the cartoon made on me . watching this every night</strong></p>
 <br/>
 <br/>
 <embed>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PzMT-sOzG2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLnBsRv8rQdgRaLqDR7zgDYsG9KYdck6m9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </embed>
 </section>
 
@@ -208,9 +208,15 @@
 <br/>
 <br/>
 <br/>
+<p><strong>Help the site by giving it a Like and so you'r friends can enjoy it too !</strong></p>
+<br>
+<br>
 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fadamco1.github.io%2FfirstWebPage%2F&width=400&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="400" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 <div class="fb-like" data-href="https://adamco1.github.io/firstWebPage/" data-width="400" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-
+<br>
+<br>
+<br>
+<br>
 </section>
 
 <section id="qrcoder" class="section">
@@ -222,7 +228,7 @@
 <br/>
 <br/>
 <br/>
-<aside><p>Follow this QR code to reach the website . please share with your friends</p> </aside>
+<aside><p><strong>Follow this QR code to reach the website . please share with your friends</strong></p> </aside>
 <br>
 <br>
 <img src="http://drive.google.com/uc?export=view&id=1XdjWIDtFfP6Zfw8zwxgNaYBs5XQjqnqS"  width=300 height=500></img>
@@ -235,7 +241,7 @@
 <br/>
 <h1> Q&A </h1>
 <br/>
-<p>Difference between web1.0 , web2.0 and web3.0 :</p>
+<p><strong>Difference between web1.0 , web2.0 and web3.0 :</strong></p>
 <br/>
 <br/>
 
@@ -258,7 +264,8 @@
       recieve information , without
       the abillity to "give" 
       information , such as posts,
-      reviews,comments, or anything really.</p>
+      reviews,comments, or anything really.
+    data usually updated once in a while</p>
     </td>
     <td>
      <p> Web 2.0 describes the
@@ -283,13 +290,16 @@
        and other many useful applications which 
       makes the web even more 
       interaction encouraging than 
-      ever before.</p>
+      ever before. also called "wisdon of 
+    the crowd " , its all about the abillity 
+  to reach alot of information gathered by 
+alot of users .</p>
     </td>
   </tr>
 
 </table>
 </div>
-<p>Use case for searching the movie "inception" for each web version : </p>
+<p><strong>Use case for searching the movie "inception" for each web version : </strong></p>
 <table id="caseTable">
     <th>Web 1.0</th>
     <th>Web 2.0</th>
@@ -297,12 +307,16 @@
   
     <tr>
       <td>
-          <p>User can only read the information the site<br>
-          has to offer on the movie . cant do anything else<br>
+          <p>User can only read the information the site owners<br>
+          has to offer on the movie . cant do anything else.<br>
       </p></td>
       <td><p>
           In addition to 1.0 , the user can leave a comment on the movie<br>
-          to share information with other users<br>
+          to share information with other users. therefor every user<br>
+          can now get much more information than the site's owner has to offer.<br>
+          moreover , a user can now get more helpful search results ,<br>
+          mostly beacause of the interation between users .<br>
+          The user has the abillity to order a ticket to the movie and so on. 
       </p></td>
       <td>
           <p>In addition to 2.0 , the user can now assist recommandation<br>
@@ -354,25 +368,23 @@
 </section>
 
 <script>
-    // Open the Modal
+ 
     function openModal() {
       document.getElementById('myModal').style.display = "block";
     }
-    
-    // Close the Modal
+
     function closeModal() {
       document.getElementById('myModal').style.display = "none";
     }
     
     var slideIndex = 1;
     showSlides(slideIndex);
-    
-    // Next/previous controls
+  
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
     
-    // Thumbnail image controls
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
