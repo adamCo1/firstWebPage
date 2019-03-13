@@ -5,6 +5,9 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.2"></script>
+
 <nav id="menu" >
 <a href="#about" onclick="changeActive('About Me')">About Me</a>
 <a href="#photos" onclick="changeActive('Photos')">My Photos</a>
@@ -16,7 +19,7 @@
 <a class="active" id = "currentActive" >About Me</a>
 </nav>
 		  
-<section id="about" class="section">
+<section id="about" class="section" >
 <br/>
 <br/>
 <br/>
@@ -24,19 +27,36 @@
 <h1>About Me</h1>
 <br/>
 <br/>
-<main>My name is adam , 28 years old from hadera originally.
+<img id="mainPic" src="http://drive.google.com/uc?export=view&id=1oSwoY_SA00WiM2l-GKrFveNKV-d7Gz8p" ></img>
 
-The most interesting fields for me are AI and Algorithms , and i hope to find 
-a job in one of those fields in the near future .
+<ol id="aboutList" style="list-style-type:none;">
+  <li><p>My name is <a href="https://en.wikipedia.org/wiki/Chuck_Norris">Chuck Norris </a>. Im an actor , producer , and a martial arts figher and teacher ,</br>
+    and even a book writer .</br>
+    Before getting to know me , you can first look at a website created by fans that shows 
+    many TRUE facts about me : <p><a href="https://chucknorrisfacts.net/top-100">Facts</a><br>
+    I was born at 10 March 1940 at Oklahoma . I was named after my Fathers minister </br>
+    and i have two brothers , wieland and Aaron . when i was 18 , i joined the U.S. air forces </br>
+    as an Air policeman , There i started training in Tang Soo Do , my favorite Martial Art field . </br>
+    after the army time , i started working as an actor along-side the famouse Bruce Li .I am best knows
+  from the series "Walker - Texas Ranger" </br>
+    </p></li>
+</br>
+  <h2>My Hobbies </h2>
+  <li><p2>
+      <ol>
+        <li a >Teaching martial Arts</li>
+        <li a >Writing books</li>
+        <li a >Roundhouse kicking</li>
+        <li a >Power boat racing</li>
+      </ol>
+      
+  </p2></li>
 
-I excpect that after completing this course i will have a working knowledge of
-building websites in a moderate level .
 
-I never had any expirience with the web but surfing in it . so the most hard thing for
-was to get used to the tags and to the concept that the web site is disconnected
-from the code of the scripts . Also took me a few hours to get used to javascript,
-which i have never used before</main> .
-<br/>
+  </p2>
+</ol>
+
+
 <br/>
 <br/>
 <br/>
@@ -54,10 +74,114 @@ which i have never used before</main> .
 <br/>
 <br/>
 <br/>
-<h2>My Photos</h2>
+<h1>My Photos</h1>
 <br/>
 <br/>
-<br/>
+<div class="row">
+  <div class="column">
+    <img id="img1" src="http://drive.google.com/uc?export=view&id=1rGymY2GAyP_Bs4FV4B-ncsJts7PbBuJE"  class="hover-shadow" onclick="openModal();currentSlide(1)" >
+  </div>
+  <div class="column">
+      <img id="img2" src="http://drive.google.com/uc?export=view&id=19-Db6U-B6GseGn_GEVIgx5xUW6WNU9yX" class="hover-shadow" onclick="openModal();currentSlide(2)" >
+    </div>
+    <div class="column">
+        <img id="img3" src="http://drive.google.com/uc?export=view&id=1FvNOGIny9ScjP0T_sc1yNvXZN9PaXskE" class="hover-shadow" onclick="openModal();currentSlide(3)" >
+      </div>
+      <div class="column">
+          <img id="img4" src="http://drive.google.com/uc?export=view&id=176lIJCUQ5DCP3udRtXmHXuOWGz4pk5g7" class="hover-shadow" onclick="openModal();currentSlide(4)" >
+        </div>
+       <div class="column">
+           <img id="img5" src="http://drive.google.com/uc?export=view&id=1hXGE2sUTj0WYe2Y4vmrmGt96nkJ43CAw" class="hover-shadow" onclick="openModal();currentSlide(5)"  >
+       </div>
+
+        <div class="column">
+              <img id="img6" src="http://drive.google.com/uc?export=view&id=1MdhFkBySkcCT4ZiM0KQE2zg80AS6Nulb" class="hover-shadow" onclick="openModal();currentSlide(6)" >
+        </div>    
+
+</div>
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="http://drive.google.com/uc?export=view&id=1rGymY2GAyP_Bs4FV4B-ncsJts7PbBuJE" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="http://drive.google.com/uc?export=view&id=19-Db6U-B6GseGn_GEVIgx5xUW6WNU9yX" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="http://drive.google.com/uc?export=view&id=1FvNOGIny9ScjP0T_sc1yNvXZN9PaXskE" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="http://drive.google.com/uc?export=view&id=176lIJCUQ5DCP3udRtXmHXuOWGz4pk5g7" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="http://drive.google.com/uc?export=view&id=1hXGE2sUTj0WYe2Y4vmrmGt96nkJ43CAw" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="http://drive.google.com/uc?export=view&id=1MdhFkBySkcCT4ZiM0KQE2zg80AS6Nulb" style="width:100%">
+          </div>  
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="http://drive.google.com/uc?export=view&id=1rGymY2GAyP_Bs4FV4B-ncsJts7PbBuJE" onclick="currentSlide(1)" alt="kicking">
+       </div>
+  
+      <div class="column">
+        <img class="demo" src="http://drive.google.com/uc?export=view&id=19-Db6U-B6GseGn_GEVIgx5xUW6WNU9yX" onclick="currentSlide(2)" alt="Movie cover">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="http://drive.google.com/uc?export=view&id=1FvNOGIny9ScjP0T_sc1yNvXZN9PaXskE" onclick="currentSlide(3)" alt="My wife">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="http://drive.google.com/uc?export=view&id=176lIJCUQ5DCP3udRtXmHXuOWGz4pk5g7" onclick="currentSlide(4)" alt="Training soldiers">
+      </div>
+
+      <div class="column">
+          <img class="demo" src="http://drive.google.com/uc?export=view&id=1hXGE2sUTj0WYe2Y4vmrmGt96nkJ43CAw" onclick="currentSlide(5)" alt="My family">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="http://drive.google.com/uc?export=view&id=1MdhFkBySkcCT4ZiM0KQE2zg80AS6Nulb" onclick="currentSlide(6)" alt="On my boat">
+          </div> 
+
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </section>
 
 <section id="playlist" class="section">
@@ -65,13 +189,13 @@ which i have never used before</main> .
 <br/>
 <br/>
 <br/>
-<h3>My Playlist</h3>
+<h1>My Playlist</h1>
 <br/>
-My favorite band is Dream Theater . so the list is ofcourse of their songs
+<p>My favorite is the cartoon made on me . watching this every night</p>
 <br/>
 <br/>
 <embed>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/yx9-5AxFa4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PzMT-sOzG2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </embed>
 </section>
 
@@ -80,11 +204,13 @@ My favorite band is Dream Theater . so the list is ofcourse of their songs
 <br/>
 <br/>
 <br/>
-<h4>Give me a like</h4>
+<h1>Give me a like</h1>
 <br/>
 <br/>
 <br/>
-<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.4siteconsulting.co.uk%2Fcase-study-2.html&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fadamco1.github.io%2FfirstWebPage%2F&width=400&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="400" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<div class="fb-like" data-href="https://adamco1.github.io/firstWebPage/" data-width="400" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
 </section>
 
 <section id="qrcoder" class="section">
@@ -92,15 +218,14 @@ My favorite band is Dream Theater . so the list is ofcourse of their songs
 <br/>
 <br/>
 <br/>
-<h5>Scan my code</h5>
+<h1>Scan my code</h1>
 <br/>
 <br/>
 <br/>
-<aside>Follow this QR code to reach the website
-
-
-
-</aside>
+<aside><p>Follow this QR code to reach the website . please share with your friends</p> </aside>
+<br>
+<br>
+<img src="http://drive.google.com/uc?export=view&id=1XdjWIDtFfP6Zfw8zwxgNaYBs5XQjqnqS"  width=300 height=500></img>
 </section>
 
 <section id="Q&A" class="section">
@@ -108,9 +233,9 @@ My favorite band is Dream Theater . so the list is ofcourse of their songs
 <br/>
 <br/>
 <br/>
-<h6>Ans</h6>
+<h1> Q&A </h1>
 <br/>
-Difference between web1.0 , web2.0 and web3.0 :
+<p>Difference between web1.0 , web2.0 and web3.0 :</p>
 <br/>
 <br/>
 
@@ -122,7 +247,7 @@ Difference between web1.0 , web2.0 and web3.0 :
   <th>Web 3.0</th>
 
   <tr>
-    <td>
+    <td><p>
       Web 1.0 described the 
       "readable" phrase .
       in this version , 
@@ -133,10 +258,10 @@ Difference between web1.0 , web2.0 and web3.0 :
       recieve information , without
       the abillity to "give" 
       information , such as posts,
-      reviews,comments, or anything really.
+      reviews,comments, or anything really.</p>
     </td>
     <td>
-      Web 2.0 describes the
+     <p> Web 2.0 describes the
        "writeable" phrase.
       In this version , the 
       interaction between users
@@ -145,29 +270,49 @@ Difference between web1.0 , web2.0 and web3.0 :
       also "give" information 
       , not like in Web 1.0 .
       It encourages information 
-      sharing and user's participation . 
+      sharing and user's participation .</p> 
     </td>
     <td>
-      Web 3.0 is the "excecuteable" 
+      <p>Web 3.0 is the "excecuteable" 
       phrase . In this version , the 
       dynamic applications were 
       introduced to the web , 
       which enables interactive
       services such as HTML5 
-      tutorials , and other many 
-      useful applications which 
+      tutorials ,recommandation systems,chat bots ,
+       and other many useful applications which 
       makes the web even more 
       interaction encouraging than 
-      ever before.
+      ever before.</p>
     </td>
   </tr>
 
 </table>
 </div>
+<p>Use case for searching the movie "inception" for each web version : </p>
+<table id="caseTable">
+    <th>Web 1.0</th>
+    <th>Web 2.0</th>
+    <th>Web 3.0</th>
+  
+    <tr>
+      <td>
+          <p>User can only read the information the site<br>
+          has to offer on the movie . cant do anything else<br>
+      </p></td>
+      <td><p>
+          In addition to 1.0 , the user can leave a comment on the movie<br>
+          to share information with other users<br>
+      </p></td>
+      <td>
+          <p>In addition to 2.0 , the user can now assist recommandation<br>
+          systems, or any other interactive apps on the website <br>
+          to get more knowledge on the movie or get to similar movies<br>
+      </p></td>
+    </tr>
+  
+</table>
 
-
-
-<br/>
 </section>
 
 <section id="contact" class="section">
@@ -178,11 +323,7 @@ Difference between web1.0 , web2.0 and web3.0 :
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h7>Contact Me</h7>
+<h1>Contact Me</h1>
 <br/>
 <br/>
 <br/>
@@ -190,12 +331,12 @@ Difference between web1.0 , web2.0 and web3.0 :
 <div class="emailFormContainer">
 <form action="mailto:adamcohe@post.bgu.ac.il" method="POST" enctype="text/plain">
 
-<div>Tell me what you think by mail :</div>
-name:
+<p>Tell me what you think by mail :</p>
+<p>name:</p>
 <br/>
 <input type="text" name="name" >
 <br/>
-E-mail Content:
+<p>E-mail Content:</p>
 <br/>
 <input type="text" name="mail" >
 </br>
@@ -211,6 +352,49 @@ E-mail Content:
 <br/>
 <br/>
 </section>
+
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 
 <script>
   function changeActive(tabName){
