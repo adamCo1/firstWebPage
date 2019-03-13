@@ -5,7 +5,15 @@
 	width: 100%;
 	overflow:hidden;
 	background-color:#111;
+	z-index:1;
 }	
+
+p{
+	font-size : 18px;
+	border:1px 1px 1px 1px solid black;
+	font-family:arial;
+}
+
 
 #menu a{
 	float:left;
@@ -17,9 +25,27 @@
 	text-align:center;
 }
 
+#aboutList li{
+
+	background-color:#d6fafc;
+	width: 50%;
+	margin:20px 10px 10px 10px ;
+	padding-left:10px;
+	border-radius: 5px;
+	font-size:18px;
+	font-family:arial;
+	border:5px 5px 5px 5px ;
+}
+
+#mainPic{
+	float:right;
+	width:45%;
+	height:480px;
+}
+
 body{
-	background-color : #908B8B;
-	font-size:20px;
+	font-size:16px;
+	background-color:#f7f7f7
 }
 
 table,th,td{
@@ -39,13 +65,24 @@ table,th,td{
 	background-color:#4CAF50;
 }
 
-h1,h2,h3,h4,h5,h6,h7{
-
-	font-size:36px;
-	width:100%;
+h1 {
+	 color: #111; 
+	 font-family: 'Open Sans Condensed', sans-serif; 
+	 font-size: 64px; 
+	 font-weight: 700; 
+	 line-height: 64px; 
+	 margin: 0 0 0; 
+	 padding: 20px 30px;
+	 text-align: center; 
+	 text-transform: uppercase;
 	text-align:center;
+	text-shadow: 0 2px white, 0 3px #777;
+	text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
 }
-
 
 .container{
 	overflow: hidden;
@@ -65,5 +102,181 @@ h1,h2,h3,h4,h5,h6,h7{
 .emailFormContainer input[type=submit] , input[type=reset]{
 	padding:8px 8px;
 	margin: 5px 5px 5px 5px ;
+	border-radius:8px ;
+	width: 100px;
+	height:40px;
+}
 	
+.emailFormContainer input[type=text]{
+    width:200px;
+	height:20px;
+}
+
+
+.row , .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height:20%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 22px;
+  margin-top: -50px;
+  color: balck;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  max-height:30%;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img1{
+	left:0;
+	position:absolute;
+	width:200px;
+	height:200px;
+}
+
+#img2{
+	position:absolute;
+	left : 250px;
+	width:200px;
+	height:200px;
+}
+
+#img3{
+	position:absolute;
+	left:500px;
+	width:200px;
+	height:200px;
+}
+
+#img4{
+	position:absolute;
+	left:750px;
+	width:200px;
+	height:200px;
+}
+
+#img5{
+	position:absolute;
+	left:1000px;
+	width:200px;
+	height:200px;
+}
+
+#img6{
+	position:absolute;
+	left:1250px;
+	width:200px;
+	height:200px;
 }
